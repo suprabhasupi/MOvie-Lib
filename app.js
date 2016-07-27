@@ -15,7 +15,7 @@ app.controller('MovieController', ['$scope', '$http', '$localStorage', '$session
       fetch();
     });
 
-    $scope.search = "Sherlock Holmes";
+    $scope.search = [];
 // $scope.search="kick";
 	function fetch(){
 		console.log("detailssss");
@@ -39,7 +39,7 @@ app.controller('MovieController', ['$scope', '$http', '$localStorage', '$session
 
   	
   	 
- 	// $localStorage.message.push($scope.details);
+ 	$localStorage.message.push($scope.details);
 
   };
 

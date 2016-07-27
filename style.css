@@ -48,3 +48,19 @@ span.year_rt{
     padding: 10px;
     background: #efefef;
 }
+md-tabs-canvas{
+	margin-left: 39%;
+
+}
+@media only screen and (max-width: 768px) {
+button.md-raised.search.md-button.md-ink-ripple{
+	position: relative;
+    left: 1.2em;
+    top: 2.5em;
+}
+
+md-tabs-canvas{
+	margin-left: 21%;
+
+}
+}
