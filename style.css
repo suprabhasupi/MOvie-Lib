@@ -1,0 +1,50 @@
+button.md-raised.md-button.md-ink-ripple{
+	float: right;
+}
+input#input_2{
+	width: 87%;
+}
+button.md-raised.search.md-button.md-ink-ripple{
+	    position: relative;
+        left: -3.9em;
+    top: -.95em;
+}
+.md-button{
+	min-width: 51px;
+}
+md-input-container.md-block.flex-gt-sm{
+	margin-top: 3em;
+}
+span.hedr{
+	    font-size: 1.3em;
+    color: #179ee0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+md-card md-card-title md-card-title-media .md-media-lg {
+       height: 5em;
+    width: 60px;
+    padding: 1em;
+    color: #ff4081;
+    font-size: 1.2em;
+}
+p.ng-binding {
+    margin-left: 1em;
+    color: #756d6e;
+}
+span.md-subhead.ng-binding{
+	    color: #1d88e6 !important;
+    /* width: 73%; */
+    font-size: 1.1em;
+}
+
+span.year_rt{
+    color: rgb(179, 174, 177);
+    font-size: 14px;
+}
+
+.md-padding {
+    padding: 10px;
+    background: #efefef;
+}

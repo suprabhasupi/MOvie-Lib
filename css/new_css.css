@@ -1,0 +1,8 @@
+
+@font-face {
+        font-family:ralreg;
+        src: url(font/Raleway-Regular.ttf);
+}
+.ralreg{
+    font-family:ralreg;
+}

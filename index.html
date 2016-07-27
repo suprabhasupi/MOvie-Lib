@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html ng-app="movie">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/new_css.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+       <link rel="stylesheet" href="css/angular-material.min.css">
+         <link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="MovieController">
+
+ <div ng-cloak>
+        <md-content>
+            <md-tabs md-dynamic-height md-border-bottom>
+            <!-- <div class="col-md-12 col-sm-12 col-xs-12"> -->
+
+            <md-tab label="Search View" class="tsmibold">
+            	<md-content class="md-padding">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-2 col-sm-2"></div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+
+            	<md-input-container class="md-block" flex-gt-sm>
+                                    <label class="search">Search</label>
+                                    <md-button class="md-raised search" ng-click="actions()"><i class="fa fa-search" aria-hidden="true"></i></md-button>
+                              <input type="text" class="form-control autocomplete" ng-model="search" onclick="select()" autofocus> 
+
+                                </md-input-container>
+                            
+                     <p><span class="hedr">Title:</span> {{details.Title}}</p>
+                     <p><span class="hedr">Year:</span> {{details.Year}}</p>
+                      <p><span class="hedr">Rated:</span> {{details.Rated}}</p>
+                       <p><span class="hedr">Released:</span> {{details.Released}}</p>
+                        <p><span class="hedr">Runtime:</span> {{details.Runtime}}</p>
+                         <p><span class="hedr">Genre:</span> {{details.Genre}}</p>
+                     <p><span class="hedr">Director:</span> {{details.Director}}</p>
+                     <p><span class="hedr">Writer:</span> {{details.Writer}}</p>
+                     <p><span class="hedr">Actors:</span> {{details.Actors}}</p>    
+                     <p><span class="hedr">Language:</span> {{details.Language}}</p> 
+                     <p><span class="hedr">Awards:</span> {{details.Awards}}</p> 
+                     <p><span class="hedr">imdbRating:</span> {{details.imdbRating}}</p> 
+
+                       <!-- <p><span class="hedr">Poster:</span> {{details.Poster}}</p> -->
+                       <img ng-src="http://www.gravatar.com/avatar/{{details.Poster}}" alt="Description" />
+
+
+
+
+
+
+            </div>
+            <div class="col-md-2 col-sm-2">
+            	 <md-button class="md-raised add" ng-click="add()"><i class="fa fa-plus" aria-hidden="true"></i></md-button>
+            </div>
+
+            </div>
+</md-content>
+
+            </md-tab>
+
+
+            <md-tab label="Library View" class="tsmibold" ng-click="show()">
+            <md-content class="md-padding">
+            <div class=" col-md-12 col-sm-12 col-xs-12">
+              <div ng-repeat="c in x">
+            <!-- <div class="col-md-1 col-sm-1"></div> -->
+          
+    <div class="col-md-3 col-sm-3 col-xs-12">
+            
+           
+                <!-- {{c.Actors}} -->
+                <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+        <md-card-title>
+          <md-card-title-text>
+            <span class="md-subhead">{{c.Title}}<br> <span class="year_rt">{{c.Year}} </span><br></span>
+          </md-card-title-text>
+          <md-card-title-media>
+            <div class="md-media-lg card-media">{{c.imdbRating}}</div>
+          </md-card-title-media>
+
+        </md-card-title>
+         <p>{{c.Actors}}</p>
+      </md-card>
+
+
+
+            </div>
+
+</div>
+<div class="col-md-1 col-sm-1"></div>
+</div>
+</md-content>
+            </md-tab>
+
+
+<!-- </div> -->
+            </md-tabs>
+            </md-content>
+<!-- <input type="text" class="form-control" placeholder="Search" ng-model="filters.search"  onclick="select()"> -->
+            <!-- <div class="input-group-btn">
+                <button class="btn btn-default" type="submit" onclick="actions()"><i class="fa fa-search"></i></button>
+                 <div ng-repeat="arr in array | filter:filters.search | filter:{Title: filters.Title}">
+                 </div>
+                </div> -->
+
+
+               
+                <!-- <div class="col-md-6 col-sm-6 col-xs-12"></div> -->
+</div>
+</div>
+
+</body>
+<script src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/ngStorage.min.js"></script>
+<!--  <script type="text/javascript" src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script> -->
+<!-- Angular ng-resource -->
+<script src="js/angular-resource.min.js"></script>
+<!-- Angular animation -->
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-aria.min.js"></script>
+<!-- Angular Material Library -->
+<script src="js/angular-material.min.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<!-- Bootstrap.js -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- This one is for router -->
+<script src="js/angular-route.min.js"></script>
+
+<!-- App.js for this app -->
+<script type="text/javascript" src="app.js"></script>
+
+</html>
