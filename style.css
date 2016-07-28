@@ -1,66 +1,175 @@
-button.md-raised.md-button.md-ink-ripple{
-	float: right;
+body {
+    background: #fbfbfb;
 }
-input#input_2{
-	width: 87%;
+
+button.md-raised.md-button.md-ink-ripple {
+    /*float: right;*/
+    width: 5%;
 }
-button.md-raised.search.md-button.md-ink-ripple{
-	    position: relative;
-        left: -3.9em;
+
+input#input_2 {
+    width: 100%;
+}
+
+button.md-raised.search.md-button.md-ink-ripple {
+    position: relative;
+    left: -3.9em;
     top: -.95em;
 }
-.md-button{
-	min-width: 51px;
+
+.md-button {
+    min-width: 41px;
+    border-radius: 23px;
+    padding: 2px;
 }
-md-input-container.md-block.flex-gt-sm{
-	margin-top: 3em;
+
+md-card md-card-title md-card-title-text:only-child .md-subhead {
+    margin-top: -2.3em;
 }
-span.hedr{
-	    font-size: 1.3em;
+
+button.md-raised.add.pull-right.md-button.md-default-theme.md-ink-ripple {
+    background: rgb(115, 136, 249);
+    color: white;
+    position: relative;
+    left: 93%;
+    margin-bottom: 2em;
+}
+
+md-input-container.md-block.flex-gt-sm {
+    margin-top: 3em;
+}
+
+span.hedr {
+    font-size: 1.3em;
     color: #179ee0;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
 md-card md-card-title md-card-title-media .md-media-lg {
-       height: 5em;
+    height: 5em;
     width: 60px;
     padding: 1em;
     color: #ff4081;
     font-size: 1.2em;
 }
+
 p.ng-binding {
-    margin-left: 1em;
+    /*margin-left: 1em;*/
     color: #756d6e;
 }
-span.md-subhead.ng-binding{
-	    color: #1d88e6 !important;
+
+span.md-subhead.ng-binding {
+    color: #1d88e6 !important;
     /* width: 73%; */
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
-span.year_rt{
+span.year_rt {
     color: rgb(179, 174, 177);
     font-size: 14px;
 }
 
+md-card md-card-title.main_serch {
+    /*display: none;*/
+}
+
+.main_body {
+    padding: 0;
+}
+
+
 .md-padding {
     padding: 10px;
-    background: #efefef;
+    background: #fbfbfb;
 }
-md-tabs-canvas{
-	margin-left: 39%;
 
+md-tabs-canvas {
+    text-align: center;
+    margin-left: auto;
+    width: 61%;
 }
+
+span.title {
+    font-size: 1.6em;
+    color: rgb(63, 81, 181);
+    font-weight: 600;
+    position: relative;
+    top: -.5em;
+}
+
+span.rated.ng-binding {
+    border: 1px solid #d4cccc;
+    color: #737070;
+    padding: 0 4px;
+}
+
+p.library_actors.ng-binding {
+    margin-left: 1em;
+}
+
+span.padding_t {
+    padding: 0 3px;
+    color: #737070;
+}
+
+span.imdb_rate {
+    color: #0c0c0c;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+p.plot.ng-binding {
+    color: black;
+    letter-spacing: .5px;
+}
+
+span.released_title {
+    font-size: 1.1em;
+    color: rgb(75, 100, 234);
+    letter-spacing: .3px;
+}
+
+p.released,
+span.country,
+p.director,
+p.actors {
+    color: rgb(11, 16, 51);
+    font-size: 14px;
+}
+
+.animate-show {
+    -webkit-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+    opacity: 1;
+}
+
 @media only screen and (max-width: 768px) {
-button.md-raised.search.md-button.md-ink-ripple{
-	position: relative;
-    left: 1.2em;
-    top: 2.5em;
+    md-tabs-canvas {
+        margin-left: auto;
+        width: 71%;
+    }
+    span.title {
+        font-size: 1.3em;
+    }
+    button.md-raised.add.pull-right.md-button.md-default-theme.md-ink-ripple {
+        left: 85%;
+    }
 }
 
-md-tabs-canvas{
-	margin-left: 21%;
-
+@media only screen and (max-width:500px) {
+    md-tabs-canvas {
+        margin-left: auto;
+        width: 90%;
+    }
+    span.title {
+        font-size: 1.2em;
+    }
 }
+
+@media only screen and (max-width:400px) {
+    button.md-raised.add.pull-right.md-button.md-default-theme.md-ink-ripple {
+        left: 75%;
+    }
 }
