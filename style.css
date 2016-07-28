@@ -145,6 +145,8 @@ p.actors {
     opacity: 1;
 }
 
+
+
 @media only screen and (max-width: 768px) {
     md-tabs-canvas {
         margin-left: auto;

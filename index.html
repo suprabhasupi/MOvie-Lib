@@ -24,12 +24,16 @@
                             <div class="col-md-2 col-sm-2"></div>
                             <div class="col-md-8 col-sm-8 col-xs-12">
                                 <md-input-container class="md-block" flex-gt-sm>
-                                    <label class="search">Search</label>
+                                    <!--<label class="search">Search</label>-->
                                  
-                                    <input type="text" class="form-control autocomplete" ng-model="search" ng-click="select()" autofocus>
+                                    <input type="text" class="form-control autocomplete" ng-model="search" ng-click="showAlert()" placeholder="Search" autofocus >
+
+
+
+
                                 </md-input-container>
-                                <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch >
-                                    <md-card-title class="main_serch">
+                                <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}"  md-theme-watch >
+                                    <md-card-title class="main_serch" >
                                         <md-card-title-text >
                                             <md-button class="md-raised add pull-right" ng-click="add()"><i class="fa fa-plus" aria-hidden="true"></i>
                                                 <md-tooltip md-delay="1000" hide-xs>Add to Library</md-tooltip>

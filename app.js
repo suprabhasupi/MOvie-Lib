@@ -48,15 +48,23 @@
                     $scope.search = movie.Title;
                 };
 
-                $scope.myvalue = false; 
+                // $scope.myvalue = false; 
                 $scope.select = function() {
-                    $scope.myvalue = true;  
-                    this.setSelectionRange(0, this.value.length);
-                    //$scope.details=true;
-                    // $scope.IsVisible = $scope.IsVisible ? false : true;
+                   
                 };
 
-              
+          
+    
+    $scope.showAlert = function(){
+     
+        // $scope.goCats = true;
+       this.setSelectionRange(0, this.value.length);
+
+     
+       
+    };
+
+
 
 
 
